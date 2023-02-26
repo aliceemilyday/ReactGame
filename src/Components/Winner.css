@@ -1,0 +1,33 @@
+
+.winner {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75vw;
+    height: 25rem;
+    margin: 7rem 0 0 11vw;
+    background-color: rgba(0, 0, 139, 0.929);
+    border: 5px solid black;
+    color: white;
+}
+
+.winner h1 {
+    font-size: 6rem;
+}
+
+.winner button{
+    margin-top: 3rem;
+    width: 6rem;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.winner button:hover {background-color: darkblue; color: white;}

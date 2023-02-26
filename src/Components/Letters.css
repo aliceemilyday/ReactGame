@@ -1,0 +1,27 @@
+
+.lettersContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.lettersContainer button {
+    width: 2rem;
+    height: 2.3rem;
+    font-size: 1.8rem;
+    margin: 0 0.1rem;
+    background-color: darkblue;
+    color: white;
+    border: 1px white solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.lettersContainer button:disabled {
+    cursor: auto;
+    opacity: 40%;
+}
+
+.lettersContainer button:hover {background-color: black;}
+.lettersContainer button:disabled:hover {background-color: darkblue;}

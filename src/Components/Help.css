@@ -1,0 +1,36 @@
+
+.help {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75vw;
+    height: 24rem;
+    margin: 7rem 0 0 11vw;
+    background-color: rgba(0, 0, 139, 0.929);
+    border: 5px solid black;
+    color: white;
+}
+
+.help h2 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin-bottom: 1.3rem;
+}
+
+.help p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5;
+    text-overflow: clip;
+}
+
+@media screen and (max-width: 730px) {
+    .help p {
+        font-size: 1rem;
+    }
+}
