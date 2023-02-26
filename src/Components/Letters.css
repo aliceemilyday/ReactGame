@@ -1,4 +1,6 @@
+/*External styling sheet for Letters.js*/
 
+/*Styling div container that contains all letter buttons*/
 .lettersContainer {
     display: flex;
     flex-flow: row wrap;
@@ -6,11 +8,12 @@
     align-items: center;
 }
 
+/*Styling individual buttons*/
 .lettersContainer button {
     width: 2rem;
     height: 2.3rem;
     font-size: 1.8rem;
-    margin: 0 0.1rem;
+    margin: 0.5rem 0.1rem;
     background-color: darkblue;
     color: white;
     border: 1px white solid;
@@ -18,10 +21,12 @@
     cursor: pointer;
 }
 
+/*Styling buttons with disabled attribute*/
 .lettersContainer button:disabled {
     cursor: auto;
     opacity: 40%;
 }
 
+/*Adding button hover effects*/
 .lettersContainer button:hover {background-color: black;}
 .lettersContainer button:disabled:hover {background-color: darkblue;}

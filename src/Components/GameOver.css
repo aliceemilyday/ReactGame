@@ -1,10 +1,12 @@
+/*External styling sheet for GameOver.css*/
 
+/*Styling div container*/
 .gameOver {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: absolute; /*Setting position to absolute so it sits above all other elements*/
     top: 0;
     left: 0;
     width: 75vw;
@@ -13,13 +15,16 @@
     background-color: rgba(0, 0, 139, 0.929);
     border: 5px solid black;
     color: white;
+    z-index: 2;
 }
 
+/*Styling game over header*/
 .gameOver h1 {
     font-size: 5.5rem;
     text-align: center;
 }
 
+/*Styling restart button*/
 .gameOver button{
     margin-top: 3rem;
     width: 6rem;

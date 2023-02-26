@@ -1,3 +1,11 @@
+/*External styling sheet for IncorrectGuesses.js*/
+
+/*Styling div container margin*/
+.incorrectGuesses {
+    margin-bottom: 1rem;
+}
+
+/*Styling container than contains div elements*/
 .incorrectLettersContainer {
     display: flex;
     flex-flow: row nowrap;
@@ -6,12 +14,14 @@
     font-size: 1.3rem;
 }
 
+/*Styling div elements*/
 .incorrectLettersContainer div {
-    margin: 0 0.5rem;
+    margin: 1rem 0.5rem 0 0.5rem;
 }
 
+/*Styling header*/
 .incorrectHeader {
-    margin: 0.8rem 0 0.2rem 0;
+    margin-top: 1.2rem;
     font-size: 1.5rem;
     text-align: center;
 }

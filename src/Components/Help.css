@@ -1,26 +1,31 @@
+/*External styling sheet for Help.js*/
 
+/*Styling div container*/
 .help {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: absolute; /*Setting position to absolute so it sits above all other elements on the page*/
     top: 0;
     left: 0;
     width: 75vw;
-    height: 24rem;
+    height: 26rem;
     margin: 7rem 0 0 11vw;
-    background-color: rgba(0, 0, 139, 0.929);
+    background-color: darkblue;
     border: 5px solid black;
     color: white;
+    z-index: 20; /*Setting z-index to 20 to ensure it's always above ALL other elements*/
 }
 
+/*Styling header*/
 .help h2 {
     font-size: 2.3rem;
     font-weight: 800;
     margin-bottom: 1.3rem;
 }
 
+/*Styling paragraph of text with game rules*/
 .help p {
     font-size: 1.2rem;
     font-weight: 500;
@@ -29,6 +34,7 @@
     text-overflow: clip;
 }
 
+/*Setting media queries to make the paragraph text smaller when the page width is at 730px or below*/
 @media screen and (max-width: 730px) {
     .help p {
         font-size: 1rem;

@@ -1,4 +1,5 @@
-
+/*Array of words used to create a randomly generated word. I've chosen to only include 7 letter words to make the list shorter and make it
+slightly easier for the user to guess the word */
 
 const words = [
     "Aalborg",
@@ -9944,4 +9945,5 @@ const words = [
     "zymurgy"
 ];
 
+//Exporting array to use in App.js
 export default words;

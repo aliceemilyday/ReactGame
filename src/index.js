@@ -10,15 +10,28 @@
     //The UI should be attractively styled and easy to use.
 
 
+
+//Importing React & ReactDOM to create React app and render components
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+//Importing BrowserRouter to create refresh button 
+import {BrowserRouter} from 'react-router-dom';
+/*Importing Provider component from react-redux to ensure application has access to the store which is needed to ensure each component has
+access to the relevant slices of state */
 import { Provider } from 'react-redux';
+//Importing store implementation created using configureStore function
 import store from './store/store';
+//Importing App component to create React element
 import App from './App';
 
+//Creating the React root element that displays all components to the user
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Provider store={store}>
-        <App />
-    </Provider>
+    //Implementing BrowserRouter to create refresh component that refreshes router
+    //Implementing the Provider component and passing store as one of its props to ensure the store is correctly implemented
+    <BrowserRouter>
+        <Provider store={store}>
+            <App />
+        </Provider>
+    </BrowserRouter>
 );

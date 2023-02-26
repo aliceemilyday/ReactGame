@@ -1,27 +1,32 @@
+/*External styling sheet for App.js*/
+
+/*Importing external font from Google*/
 @import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
 
-
+/*Styling body element with a background colour (styles entire page)*/
 body {
     background-color: darkblue; 
 }
 
+/*Using the universal selector to style all elements on the page*/
 * {
     margin: 0;
     padding: 0;
     font-family: 'Mynerve', cursive;
 }
 
+/*Styling App component*/
 .App {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     width: 95%;
-    height: 92vh;
     margin: 1rem auto;
     border: 7px black solid;
     background-color: white;
 }
 
+/*I've added the styling for the images here as there is only 1 image on the page and I felt that it didn't need it's own styling sheet*/
 img {
     width: 16rem;
 }

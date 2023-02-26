@@ -1,7 +1,8 @@
+//Importing external styling sheet
 import './Help.css';
 
+//Below is the function component created to display the 'Game Rules' to the user when the help button is clicked
 function Help() {
-
     return (
         <div className='help'>
             <h2>Game Rules</h2>
@@ -17,4 +18,5 @@ function Help() {
     );
 }
 
+//Exporting component to Header.js
 export default Help;

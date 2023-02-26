@@ -1,9 +1,12 @@
+/*External styling sheet for WordGenerator.js*/
 
+/*Styling div container that contains all elements*/
 .wordContainer {
     display: flex;
     flex-flow: row nowrap;
 }
 
+/*Styling divs within wordContainer*/
 .wordContainer div {
     display: flex;
     justify-content: center;
@@ -16,4 +19,12 @@
     font-weight: 600;
     border-bottom: 3px solid black;
     color: darkblue;
+}
+
+/*Setting media queries to adjust the size when the max-width is 430px or below*/
+@media screen and (max-width: 430px) {
+    .wordContainer div {
+        width: 1.8rem;
+        margin: 1rem 0.3rem 0.6rem 0.3rem;
+    }
 }

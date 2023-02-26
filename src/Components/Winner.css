@@ -1,10 +1,12 @@
+/*External styling sheet for Winner.js*/
 
+/*Styling div container*/
 .winner {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: absolute; /*I've used position: absolute to overlay the div element above all other elements*/
     top: 0;
     left: 0;
     width: 75vw;
@@ -13,12 +15,15 @@
     background-color: rgba(0, 0, 139, 0.929);
     border: 5px solid black;
     color: white;
+    z-index: 2; /*I've set the z-index to 2 to ensure it sits on top of other elements*/
 }
 
+/*Styling winner h1 element*/
 .winner h1 {
     font-size: 6rem;
 }
 
+/*Styling restart button*/
 .winner button{
     margin-top: 3rem;
     width: 6rem;
