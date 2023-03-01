@@ -33,7 +33,7 @@ function Header(){
             {/*Below I have created the button that shows the Help component when clicked on. If showHelp is TRUE, the buttons inner text
             will say 'CLOSE' so the user can exit the help page, and the help component will be shown. Until the button is clicked it will
             not be visible*/}
-            <button type="button" onClick={handleClick}>{showHelp ? 'CLOSE' : 'HELP'}</button>
+            <button type="button" className='helpButton' onClick={handleClick}>{showHelp ? 'CLOSE' : 'HELP'}</button>
             {showHelp && (<Help />)}
         </header>
     );

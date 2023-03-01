@@ -23,34 +23,34 @@ function Hangman() {
 
     //I have then used the new variable length to identify how many incorrect letters there are and returned the corresponding image
     if (incorrectLetters.length === 0){
-        return <img src={hangman0} alt="hangman game image"></img>
+        return <img src={hangman0} alt="hangman game illustration 1"></img>
     }
     else if (incorrectLetters.length === 1){
-        return <img src={hangman1} alt="hangman game image"></img>
+        return <img src={hangman1} alt="hangman game illustration 2"></img>
     }
     else if (incorrectLetters.length === 2){
-        return <img src={hangman2} alt="hangman game image"></img>
+        return <img src={hangman2} alt="hangman game illustration 3"></img>
     }
     else if (incorrectLetters.length === 3){
-        return <img src={hangman3} alt="hangman game image"></img>
+        return <img src={hangman3} alt="hangman game illustration 4"></img>
     }
     else if (incorrectLetters.length === 4){
-        return <img src={hangman4} alt="hangman game image"></img>
+        return <img src={hangman4} alt="hangman game illustration 5"></img>
     }
     else if (incorrectLetters.length === 5){
-        return <img src={hangman5} alt="hangman game image"></img>
+        return <img src={hangman5} alt="hangman game illustration 6"></img>
     }
     else if (incorrectLetters.length === 6){
-        return <img src={hangman6} alt="hangman game image"></img>
+        return <img src={hangman6} alt="hangman game illustration 7"></img>
     }
     else if (incorrectLetters.length === 7){
-        return <img src={hangman7} alt="hangman game image"></img>
+        return <img src={hangman7} alt="hangman game illustration 8"></img>
     }
     else if (incorrectLetters.length === 8){
-        return <img src={hangman8} alt="hangman game image"></img>
+        return <img src={hangman8} alt="hangman game illustration 9"></img>
     }
     else if (incorrectLetters.length === 9){
-        return <img src={hangman9} alt="hangman game image"></img>
+        return <img src={hangman9} alt="hangman game illustration 10 game over"></img>
     }
     else if (incorrectLetters.length >= 10){
         //Once the user has guessed 10 incorrect letters, they will be shown the GameOver component

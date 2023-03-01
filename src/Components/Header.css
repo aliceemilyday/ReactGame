@@ -29,7 +29,7 @@ header {
 }
 
 /*Styling 'HELP' button in top right corner*/
-header button {
+.helpButton {
     position: absolute;
     right: 0;
     margin: 1rem 4vw 0 0;
@@ -54,7 +54,7 @@ header button:hover {background-color: darkblue; color: white;}
     font-size: 0.9rem;
 }
 
-header button {
+.helpButton {
     width: 4rem;
     height: 1.8rem;
     font-size: 0.9rem;
