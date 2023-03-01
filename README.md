@@ -47,7 +47,7 @@ To start playing the game, simply click on one of the alphabet letter buttons. I
 incorrectly guessed letter will appear in a list at the bottom of the screen (see screenshot above). Each letter button is disabled once it has been clicked on.<br/>
 To create the letter buttons, I simply created an array with the letters of the alphabet and used the **map** method to create button elements from the array.<br/>
 Once a button has been clicked on, a function is called that sends the value of the button to state using a **reducer**. The value is then compared against the letters in the randomly generated word and if it matches, 
-the letter attribute *'found'* is updated to true. This in turn updates the word element and reveals the correct letters to the user. 
+the letter attribute *'found'* is updated to true. This in turn updates the word element and reveals the correct letters to the user.  
 
 <sub>*To edit the component described above, open Letters.js for the letter buttons component. To edit the styling, open Letters.css.*</sub><br/>
 
