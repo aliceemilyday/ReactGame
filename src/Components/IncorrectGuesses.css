@@ -1,8 +1,12 @@
 /*External styling sheet for IncorrectGuesses.js*/
 
-/*Styling div container margin*/
-.incorrectGuesses {
-    margin-bottom: 1rem;
+/*Styling empty div container*/
+.emptyIncorrectGuesses {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.6rem;
 }
 
 /*Styling container than contains div elements*/

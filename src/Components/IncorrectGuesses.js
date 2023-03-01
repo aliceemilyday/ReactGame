@@ -16,14 +16,24 @@ function IncorrectGuesses() {
         <div key={"letter" + index}>{letter}</div>
     );
 
-    return ( //Finally I have returned the newly created letterItems array with the div elements
-        <div className='incorrectGuesses'>
-            <h2 className='incorrectHeader'>Incorrect Guesses:</h2>
-            <div className="incorrectLettersContainer">
-                {letterItems}
+    //I've added a control statement to identify if there are no incorrectly guessed letters so I can control the styling of the empty container
+    if(incorrectLetters.length === 0){
+        return ( 
+            <div className='emptyIncorrectGuesses'>
+                <h2 className='incorrectHeader'>Incorrect Guesses:</h2>
             </div>
-        </div>
-    );
+        );
+    }
+    else {
+        return ( //Finally I have returned the newly created letterItems array with the div elements
+            <div>
+                <h2 className='incorrectHeader'>Incorrect Guesses:</h2>
+                <div className="incorrectLettersContainer">
+                    {letterItems}
+                </div>
+            </div>
+        );
+    }
 }
 
 //Exporting components to use in App.js
